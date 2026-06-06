@@ -1,8 +1,8 @@
-# Pertemuan 2 — Layout, Navigation & Widget Lanjutan
+# Pertemuan 1 — Pengenalan Flutter & Widget Dasar
 
 > **Mata Kuliah:** Praktikum Pemrograman Mobile  
 > **NIM:** 233040013  
-> **Nama:** Alfi Mifta Nurhakim  
+> **Nama:** Alfi  
 > **Semester:** 6
 
 ---
@@ -10,10 +10,15 @@
 ## 📁 Struktur Folder
 
 ```
-pertemuan2/
-└── profile_page/           # Project Flutter — Halaman Profil Lengkap
+pertemuan1/
+├── latihan_widget/         # Project latihan widget dasar Flutter
+│   ├── lib/
+│   │   └── main.dart       # Entry point aplikasi (latihan)
+│   └── pubspec.yaml
+│
+└── PPM2026_233040013_C/    # Project tugas resmi pertemuan 1
     ├── lib/
-    │   └── main.dart       # Entry point + seluruh widget aplikasi
+    │   └── main.dart       # Entry point aplikasi (tugas)
     └── pubspec.yaml
 ```
 
@@ -30,7 +35,10 @@ flutter --version
 ### Menjalankan project:
 
 ```bash
-cd profile_page
+# Masuk ke folder project yang ingin dijalankan
+cd latihan_widget
+# atau
+cd PPM2026_233040013_C
 
 # Install dependencies
 flutter pub get
@@ -41,27 +49,25 @@ flutter run
 
 ---
 
-## 📝 Materi Pertemuan 2
+## 📝 Materi Pertemuan 1
 
-- **Layout lanjutan:** `SingleChildScrollView`, `Row`, `Column`, `Stack`, `Wrap`, `GridView`
-- **Navigation:** `Drawer`, `BottomNavigationBar`, `Navigator.push`, `MaterialPageRoute`
-- **Widget interaktif:** `AppBar` dengan actions, `FloatingActionButton`
-- **Widget input:** `TextField`, `Checkbox`, `Switch`, `Slider`, `DropdownButton`
-- **Widget feedback:** `SnackBar`, `AlertDialog`, `LinearProgressIndicator`, `CircularProgressIndicator`
-- **Widget display:** `Card`, `ListTile`, `Chip`, `CircleAvatar`, `Divider`
+- Instalasi Flutter SDK & Android Studio
+- Struktur project Flutter
+- Widget dasar: `Text`, `Column`, `Row`, `Container`, `Center`
+- `MaterialApp` & `Scaffold`
+- `AppBar`, `ElevatedButton`
+- Styling dasar dengan `TextStyle` dan `BoxDecoration`
 
 ---
 
-## 📱 Fitur Aplikasi `profile_page`
+## 📱 Preview Aplikasi
 
-Aplikasi halaman profil lengkap dengan:
+### `PPM2026_233040013_C`
+Aplikasi perkenalan diri sederhana dengan:
+- Emoji/ikon sambutan
+- Nama dan NIM mahasiswa
+- Kartu profil dengan informasi studi
+- Tombol interaktif
 
-| Fitur | Keterangan |
-|---|---|
-| 🧑 Header Profil | Avatar, nama, dan jabatan |
-| 📊 Statistik | Post, Teman, Like dalam baris |
-| 📋 Info Sections | Tentang Saya, Pendidikan, Hobi, Kontak |
-| 🗂️ Drawer | Menu navigasi samping |
-| 🔽 Bottom Nav Bar | Navigasi bawah 4 tab |
-| ➕ FAB | Floating Action Button edit |
-| 🗃️ Widget Gallery | Demo 5 kategori widget Flutter |
+### `latihan_widget`
+Latihan dasar menampilkan teks dengan berbagai styling menggunakan `Column` dan `Text`.
