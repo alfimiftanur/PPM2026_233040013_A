@@ -45,6 +45,9 @@ build/
 # Coverage & Test
 coverage/
 
+# Lock files (opsional - banyak tim memilih untuk commit ini)
+# pubspec.lock
+
 # OS generated files
 .DS_Store
 Thumbs.db
